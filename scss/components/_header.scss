@@ -1,5 +1,47 @@
 .header{
     padding: 16px 0px;
+    position: relative;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__div-nav {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+
+    min-height: 700px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--primary-white-color);
+    color: #212121;
+    padding: 48px 40px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+
+    letter-spacing: 0.02em;
+
+    z-index: 2;
+
+    &.is-open {
+        display: block;
+    }
 }
 
 .burger-menu{
@@ -31,47 +73,6 @@
     
 }
 
-.header__div-nav{
-    position: relative;
-    
-}
-
-.menu-container{
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    
-     background-color: #ff456f;
-     color: #212121;
-    padding: 48px 40px;
-    font-weight: 500;
-        font-size: 40px;
-        line-height: 47px;
-        
-        letter-spacing: 0.02em;
-
-        &.is-open{
-            display: block;
-        }
-}
-
-
-.header {
-    border-bottom: 1px solid #ececec;
-}
-
-.header__div-nav {
-    display: flex;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    
-    
-}
 
 .navbar__logospan {
     color: var(--accent-color);
@@ -82,10 +83,50 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    
 }
 
 .menu-container--opened{
     color: var(--accent-color);
+}
+
+
+.menu-container__contact{
+    margin-top: auto;
+}
+
+.menu-container__socials{
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    
+}
+
+.menu-container__social-item{
+    padding: 0px 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+       &:last-child{
+        border: none;
+       }
+}
+
+.menu-container__phone{
+    font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        color: var(--accent-color);
+}
+
+.menu-container__mail{
+    font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    
+        color: var(--secondary-color);
 }
 
 .sitenav {

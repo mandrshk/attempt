@@ -2,12 +2,13 @@
 
 @import './utils/vars';
 @import './utils/normalize';
+@import './base/reset';
 @import './utils/visually-hidden';
 
 
 // base styles
 
-@import './base/reset';
+
 @import './utils/mixins';
 @import './base/common';
 
