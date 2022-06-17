@@ -35,8 +35,44 @@
               >Web</span
             >Studio</a
           >
+          <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            data-menu-button
+            aria-expended="false"
+            aria-controls="menu-container"
+          >
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Switch mobile menu"
+            >
+              <use
+                class="burger-menu"
+                href="./images/icons.svg#icon-burger-menu"
+              ></use>
+              <use
+                class="cross-menu"
+                href="./images/icons.svg#icon-close-menu"
+              ></use>
+            </svg>
+          </button>
 
-          <ul class="sitenav">
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul>
+              <li class="menu-container--opened"> <a href=""> Студия</a></li>
+              <li> <a href=""> Портфолио</a></li>
+              <li> <a href=""> Контакты</a></li>
+            </ul>
+            <ul>
+              
+              <li><a href="tel:+380961111111"  >+38 096 111 11 11</a></li>
+              <li><a href="mailto:info@devstudio.com"  >info@devstudio.com</a></li>
+            </ul>
+          </div>
+
+          <!-- <ul class="sitenav">
             <li class="sitenav__item">
               <a
                 href="./index.html"
@@ -97,12 +133,7 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
-        <!-- <button type="button">
-          <svg>
-            <use href="icon-burger-menu"></use>
-          </svg>
-        </button> -->
+        </ul> -->
       </div>
     </header>
 
@@ -605,5 +636,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/burger-menu.js"></script>
   </body>
 </html>

@@ -1,31 +1,98 @@
-// .header {
-//     border-bottom: 1px solid #ececec;
-// }
+.header{
+    padding: 16px 0px;
+}
 
-// .header__div-nav {
-//     display: flex;
-// }
+.burger-menu{
+    fill: #212121;
+}
 
-// .navbar {
-//     display: flex;
-//     align-items: center;
-// }
+.menu-button{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: 276px;
 
-// .navbar__logospan {
-//     color: var(--accent-color);
-// }
+}
 
-// .navbar__logo-webstudio {
-//     font-family: 'Raleway';
-//     font-weight: 700;
-//     font-size: 26px;
-//     line-height: 1.2;
-// }
+.menu-button .cross-menu{
+    display: none;
+    
+}
 
-// .sitenav {
-//     display: flex;
-//     margin-left: 93px;
-// }
+.menu-button.is-open .cross-menu{
+    display: block;
+
+}
+
+.menu-button.is-open .burger-menu{
+    display: none;
+    
+}
+
+.header__div-nav{
+    position: relative;
+    
+}
+
+.menu-container{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    
+     background-color: #ff456f;
+     color: #212121;
+    padding: 48px 40px;
+    font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        
+        letter-spacing: 0.02em;
+
+        &.is-open{
+            display: block;
+        }
+}
+
+
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__div-nav {
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.navbar__logospan {
+    color: var(--accent-color);
+}
+
+.navbar__logo-webstudio {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.menu-container--opened{
+    color: var(--accent-color);
+}
+
+.sitenav {
+    display: none;
+    // display: flex;
+    // margin-left: 93px;
+}
 
 // .sitenav__item:not(:last-child) {
 //     margin-right: 50px;
@@ -65,10 +132,11 @@
 
 
 
-// .auth-nav {
-//     display: flex;
-//     margin-left: auto;
-// }
+.auth-nav {
+    display: none;
+    // display: flex;
+    // margin-left: auto;
+}
 
 // .auth-nav__item+.auth-nav__item {
 //     margin-left: 50px;
